@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<!-- 
+	비디오타입 종류		마임타입			설명
+	MP4				video/mp4		H.264비디오와 ACC오디오 코덱으로 인코딩된 MPEG4파일
+	WebM			video/webm		VP8/Vp9 비디오와 Vorbis 오디오 코덱으로 인코딩된 WebM파일
+	ogg				video/ogg		Theora 비디오와 Vorbis 오디오 코덱으로 인코딩된 Ogg파일
+
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style type="text/css">
+	
+</style>
+</head>
+<body>
+	<video controls=controls src="./resource/video/bear.mp4" type="video/mp4"
+			width="80%" height="80%"
+			>당신의 브라우저가 video 태그를 지원하지 않습니다.</video>
+	<br>
+	<br>
+	<video controls width="500" height="300">
+		<source src="./resource/video/bear.mp4" type=video/mp4>
+		<source src="./resource/video/bear.ogg" type=video/ogg>
+	
+	</video>
+	
+</body>
+</html>

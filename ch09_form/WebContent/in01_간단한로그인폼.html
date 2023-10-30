@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<!-- 
+	웹 폼
+		: 웹 페이지를 통해서 사용자 입력을 받는 폼을 웹폼(webform) 또는 폼(form)이라고 한다.
+		: <form> 속성
+				: action : 폼으로 입력받은 데이터를 처리할 웹 서버 응용프로그램 이름(url)
+				: method : 폼으로 입력받은 데이터를 웹 서버에 전송하는 방식(get,post)
+									:get 방식은 보안에 취약함. 중간에 가로챌 수 있음
+				: target : 웹 서버 응용프로그램으로 부터 전송받은 데이터를 출력할 윈도우 이름
+				: name 	 : 폼의 이름
+				
+		폼을 만드는 폼 요소의 종류
+				: type="text"
+				: password
+				: button
+				: submit
+				: reset
+				: image
+				: checkbox
+				: radio
+				: number
+				: range
+				: color
+				: email
+				: tel
+				: search
+				: file
+				: month | week | date | time | datetime 
+				<select>
+					<option></option>
+					<option></option>
+					<option></option>
+				<select>
+
+
+ -->
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h2>로그인 폼</h2>
+	<hr>
+	<form action="#" name="log_info" method="get"><br>
+		아이디: <input type="text" value="" size="15"><br>
+		비밀번호: <input type="password" value="" size="15"><br>
+		
+		<input type="submit" value="전송">&nbsp;
+		<input type="reset" value="취소">
+	</form><br><br>
+	
+	<br>
+	<br>
+	
+	<form name="search info" action="https://search.naver.com/search.naver/" method="get">
+		검색단어:&nbsp;<input type="text" name="query"><br>
+		<input type="submit" value="검색">
+	</form>
+	
+	<br>
+	<br>
+	<form action="https://search.naver.com/search.naver/" method="get">
+		검색단어: <input type="text" list="중국음식" name=query><br>
+				<datalist id="중국음식">
+					<option>짜장면</option>
+					<option>탕수육</option>
+					<option>단무지</option>
+					<option>짬뽕</option>
+				</datalist>
+				
+			전송: <input type="submit" value="검색">
+	</form>
+	
+</body>
+</html>

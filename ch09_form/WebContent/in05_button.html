@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h3>여러가지 버튼의 종류</h3>
+	<hr>
+	<form action="#" name="">
+		<input type="button" value="로그인"><br>
+		<button type="button">로그인</button>	
+		<!-- 주의: button태그는 사용할 때 기본타입이 submit이다
+			 클릭하면 서버에 전송하고 다시 로드되는 현상이 나타나므로
+			 이벤트에 활용하려면 type을 button으로 수정해야 한다.-->
+			 
+		<hr>
+		<input type="submit" value="전송"><br>
+		<button type="submit">전송</button>
+		
+		<hr>
+		<input type="reset" value="취소"><br>
+		<button type="reset">취소</button>
+		
+		<hr>
+		<!-- 이미지버튼 -->
+		<input type="image" src="dogo1.png" alt="이미지버튼">
+		<button type="button"><img src="dogo1.png" alt="이미지버튼"></button>
+	</form>
+</body>
+</html>

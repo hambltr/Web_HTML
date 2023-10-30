@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<!-- base는 <a></a> 앵커 태그와 같이 세트로 붙음 
+
+	1. 주석 :학습정리, 메모, 코드설명 등 명시
+	2. 태그와 요소
+		(요소 element)
+			
+			시작태그 					종료태그
+		<h1 속성명 ="">  				 </h1>
+		<h1 속성명 ="" 속성명 ="" > : innerHTML </h1>  
+		
+		ctrl + shift + f : 정렬
+		
+	3. placeholder
+		-https://via.placeholder.com/width x height
+		
+	4. Lorem ipsum : https://ipsum.com 
+	
+	
+	5. color picker : 색상 스포이드
+	
+	6. html 문서의 구조
+		
+								html
+								  ㅣ
+						---------------------
+					      ㅣ			 		ㅣ
+					  head					body
+					     ㅣ					  ㅣ
+			  -------------------	  	    div
+			  ;		;	  ;	    ;..			  ㅣ
+			  							------------------
+			  							ㅣ		ㅣ		ㅣ
+			  							p		p		p
+			  							ㅣ
+			  						   span
+										
+								
+		1. head	
+			meta: 웹페이지에 대한 추가정보, 문자코드, 문서의 개요, 키워드
+				: 브라우저에 나타나지 않는 문서정보
+			
+			title: 문서의 제목 (페이지 상단에 표출되는 페이지 이름)
+			
+			script: 웹페이지의  자바스크립트 추가
+			
+			link : 외부문서 파일 추가
+			
+			style : css 추가
+			
+		
+		2. body
+			h1~h6 : 제목 태그, 문서의 구조를 잡을 때 사용 (주로 1~3까지 씀)
+			
+			본문태그의 종류
+				: p	  : 단락 지정, 문장의 단락을 만들 때 사용
+				: br  : 줄 바꿈
+				: hr  : 줄 긋기 , 수평
+				: a	  : 앵커 태그 (anchor), 문서의 이동
+							: 지정한 사이트로 이동
+							: <a href="https://www.naver.com">네이버</a>
+							
+							: 지정한 페이지로 이동
+							
+							: 페이지 내에서 특정 부분으로 이동
+							: <a href="#aa"> 이동 </a>
+							: <h1 id="aa"></h1>
+							: aa로 이동
+											  
+											  
+			 글자형태
+				- b : 굵은 글자 
+				- i : 기울어진 글자
+				- small : 작은 글자	
+				- sup : 윗첨자 : 주변의 글자보다 조금 위로 올라감
+				- sub : 아래첨자 : 주변의 글자보다 조금 아래로 내려감
+				- del : 가운데 삭선처리 : 글자에 가운데 수평줄	
+					
+					
+			: 이미지 
+				: img : 이미지를 추가할 때 <img src = "절대경로 or 상대경로">	
+				: 절대경로 : 외부 어디의 사이트
+				: 상대경로 : 프로젝트 내부의 어떠한 주소  ../ ./  / (생략가능)  
+				
+			: 목록
+				: ul : 순서 없는 목록 영역지정
+				: ol : 순서 있는 목록 영역 지정
+				: li : 목록요소 (리스트) (ul, ol과 함께 사용해야 함)
+				<li> 1. 소개 </li> <li> <a> 1. 소개 </a> </li> 
+				<li> 2. 내용 </li> <li> <a> 2. 내용 </a> </li>
+				앵커태그로 묶어서 따로 리스트 링크 처리
+			
+			: 테이블
+				: table : 테이블 영역 지정
+				: tr : row
+				: td : column
+				: thead, tbody, tfoot
+			
+			: 영역태그
+				: div, span
+			
+			: 시멘틱태그 (검색): 구글은 시멘틱 태그를 사용해야만 검색결과 상단 노출이 가능하다.
+				: header, footer, section, article, asdie
+				
+									  
+											  
+-->
+
+
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="author" content="홍길동">
+<meta name="description" content="내가 만든 웹 페이지 입니다.">
+<meta name="keywords" content="짜장면, 짬뽕">
+
+<base href="https://www.chosun.com">
+<link href="https://www.naver.com">
+
+<title>내 웹페이지</title><!-- 페이지 이름 -->
+</head>
+<body>
+	<h1 title="제목">내가만든웹페이지</h1>
+	<!-- 제목 , 커서를 올리면 제목이라는 hint 팝업이 생김-->
+	<hr>
+	<!-- 수평줄 -->
+	<a href="economy">경제뉴스</a>
+	<a href="national">사회뉴스</a>
+	<img src="https://via.placeholder.com/200 x 300">
+</body>
+</html>
